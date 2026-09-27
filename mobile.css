@@ -1,0 +1,209 @@
+ .cards article a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #f3ede2;
+  border: 1px solid #e9dfd0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.cards article a:hover,
+.cards article a:focus-visible {
+  background: #eee5d6;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: clamp(620px, 75svh, 660px);
+    background: #171411;
+  }
+
+  .hero > img {
+    top: -8%;
+    bottom: auto;
+    height: 88%;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
+  }
+
+  .mobile-nav.open {
+    top: 92px;
+    padding: 10px max(5vw, 20px) 18px;
+    box-shadow: 0 12px 20px #211d1a24;
+  }
+
+  .mobile-nav a {
+    padding: 14px 6px;
+    color: #625950;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  .hero-content {
+    width: min(calc(100% - 40px), 600px);
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(48px, 12vw, 68px);
+    line-height: 0.98;
+  }
+
+  .hero-content > p:not(.eyebrow),
+  .section > p,
+  .split p,
+  .about p,
+  .contact p,
+  .cta p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .actions {
+    align-items: flex-start;
+  }
+
+  .actions .btn {
+    width: auto;
+    max-width: 100%;
+    padding: 16px 14px;
+    text-align: left;
+  }
+
+  .trust-bar-inner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 10px;
+    padding: 28px 20px;
+  }
+
+  .trust-item {
+    padding: 0 6px;
+  }
+
+  .trust-item b {
+    font-size: 32px;
+  }
+
+  .trust-item span {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .trust-divider {
+    display: none;
+  }
+
+  .trust-cta {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .trust-fb {
+    width: auto;
+    max-width: 260px;
+    justify-content: center;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .about {
+    gap: 28px;
+  }
+
+  .about > div:first-child {
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .about img {
+    width: min(60vw, 240px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about.section h2 {
+    font-size: clamp(34px, 8.5vw, 44px);
+    line-height: 1.03;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .about .btn {
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+
+  .contact {
+    gap: 24px;
+    padding-top: 52px;
+    padding-bottom: 36px;
+  }
+
+  .contact iframe {
+    height: 200px !important;
+  }
+
+  .footer-main {
+    padding-top: 40px;
+  }
+
+  .faq summary {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .section h2 {
+    font-size: clamp(38px, 10vw, 52px);
+    line-height: 1.02;
+  }
+
+  .section {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .float {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 420px) {
+  section.section:has(> .checks) > .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+  }
+
+  .checks {
+    gap: 0 16px;
+  }
+
+  .checks span {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-main {
+    gap: 34px;
+  }
+}
